@@ -18,7 +18,7 @@ export function App() {
       setHealth(data);
       setConnectionError(null);
     } catch (err: any) {
-      setConnectionError('Unable to connect to FastAPI backend at http://127.0.0.1:8000');
+      setConnectionError('Unable to connect to FastAPI backend at https://weld-vision-ai-industrial-defect.onrender.com');
     }
   };
 

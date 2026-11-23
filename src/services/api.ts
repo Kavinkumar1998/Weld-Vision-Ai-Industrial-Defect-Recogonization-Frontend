@@ -1,6 +1,6 @@
 import { ImageDetectionResponse, SystemHealth, InspectionRecord } from '../types/detection';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://weld-vision-ai-industrial-defect.onrender.com';
 
 export async function checkSystemHealth(): Promise<SystemHealth> {
   const res = await fetch(`${API_BASE}/api/v1/health`);
